@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import url(null.css);
+
+* {
+    font-family: "Inter";
+}
+
+body {
+    background-color: rgb(12, 18, 33);
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header__body {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__logo a {
+    font-size: 36px;
+}
+
+.header__tabs {
+    display: flex;
+    column-gap: 40px;
+    font-size: 18px;
+}
+
+.header__profile {
+    display: flex;
+    column-gap: 20px;
+    font-size: 16px;
+}
+
+.header__logo a, .header__profile a{
+    transition: all .3s;
+    text-decoration: none;
+    color: white;
+}
+
+.header__logo {
+    transition: all .3s;
+}
+
+.header__logo:hover{
+    transition: all .3s ease-in-out;
+    transform: rotate(5deg);
+}
+
+.header__tabs a{
+    transition: all .3s;
+}
+
+.header__tabs a {
+    text-decoration: none;
+    color: rgb(198, 191, 191);
+}
+
+.header__logo a:hover, .header__profile a:hover {
+    color: rgba(109, 161, 229, 0.839);
+}
+
+.header__tabs a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    background-color: rgb(12, 18, 33);
+}
+
+.movie__item {
+    position: relative;
+    width: 240px;
+    margin: 10px;
+}
+
+.content__movies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.movie__cover-img {
+    position: relative;
+    height: 360px;
+    width: 240px;
+}
+
+.movie__cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.movie__cover-hover {
+    background-color: inherit;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+}
+  
+.movie__cover-hover:hover {
+    background-color: rgb(38, 33, 33);
+    cursor: pointer;
+}
+
+.movie__info {
+    padding: 10px;
+  }
+
+  .movie__current-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    margin: 50px 0;
+  }
+  
+  .movie__title {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  
+  .movie__year-genre {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  
+  .movie__year, .movie__category {
+    font-size: 14px;
+    color: rgba(198, 178, 31, 0.605);
+  }
+  
+  .movie__category {
+    max-width: 200px;
+    word-wrap: break-word;
+  }
+  
+  .movie__average {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212a4f;
+    color: #FFF;
+    border-radius: 50%;
+  }
+  
+  .movie__average-green {
+    border: 1px solid green;
+  }
+  
+  .movie__average-red {
+    border: 1px solid red;
+  }
+  
+  .movie__average-orange {
+    border: 1px solid orange;
+  }
+
+  .tab.active {
+    color: #FFF;
+  }
+
+  .wrapper__pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    padding: 20px 20px;
+  }
+
+  .btn__pagination {
+    transition: all .4s ease-in-out;
+    color:rgb(255, 255, 255);
+    background: #378cd7dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    font-size: 16px;
+    height: 32px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .btn__pagination.active {
+    color:rgb(255, 255, 255);
+    background: #bd7a32dc;
+  }
+
+.btn__pagination:hover {
+    color:rgb(160, 207, 215);
+    background: #1c5281dc;
+}
+
+.about__text {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+
+
+.text__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+}
+
+.text__title {
+  font-size: 48px;
+  text-align: center;
+  color: rgb(22, 92, 177);
+}
+
+.movie__text-info {
+  display: flex;
+}
+
+.text__desc {
+  font-size: 32px;
+  color:rgb(191, 100, 30)
+}
