@@ -1,4 +1,4 @@
-# movieCatalog
+# Catalog Movie React JS
 
 I made this web application in order to consolidate the skills acquired during the training of React JS. In the project, I used an unofficial Kinopoisk API, which works VERY unstable, because of this, errors may occur during the viewing of this project.
 
